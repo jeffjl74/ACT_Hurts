@@ -17,7 +17,7 @@ using System.Linq;
 [assembly: AssemblyTitle("Incoming Damage View Plugin")]
 [assembly: AssemblyDescription("Tracks incoming damage of a particular spell name")]
 [assembly: AssemblyCompany("Mineeme")]
-[assembly: AssemblyVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.0.1.0")]
 
 namespace ACT_Hurts
 {
@@ -77,7 +77,8 @@ namespace ACT_Hurts
             damageForm = new DamageForm
             {
                 Visible = false,
-                Size = new Size(playerList.Width, playerList.Height)
+                Size = new Size(playerList.Width, playerList.Height),
+                Location = new Point(playerList.X, playerList.Y)
             };
 
             // Create some sort of parsing event handler.  After the "+=" hit TAB twice and the code will be generated for you.

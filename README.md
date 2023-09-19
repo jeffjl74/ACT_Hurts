@@ -21,6 +21,11 @@ During combat, matching data is displayed on the form. An example is shown below
 
 The __Swing__ column is the addition of the __Landed__ and __Warded__ columns and should be how hard the mob tried to hit the player. __Landed__ is how much damage the player actually took. __BT__ is bleedthrough, for reference, and typically matches __Landed__.
 
+# Changes
+## Version 1.0.1
+* Remember the damage form's location when it was not opened.
+
+
 # Limitations (Known and Suspected)
 * In EQII, the __Warded__ data is inconsistent. For example, the __Xenolith__ spell is a group ward but the EQII log file typically only logs the ward on one player instead of the entire group. In the form, the __Warded__ column will be zero even though the player was warded. This also undervalues the __Swing__ column by the (missing) warded amount.
 * Since this data is reported during combat "in real time", there is the distinct possibility for lag if trying to track "a lot" of players. The definition of "a lot" will depend upon your computer system.
